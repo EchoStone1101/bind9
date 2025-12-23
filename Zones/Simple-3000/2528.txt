@@ -1,5 +1,0 @@
-a.a.				      500 IN SOA	b.c.d. e.a.d. 3 604800 86400 2419200 604800
-a.a.				      500 IN NS		b.c.d.
-f.a.a.			      500 IN NS		g.h.a.
-f.a.a.			      500 IN NS		i.f.j.a.
-f.a.a.			      500 IN NS		a.f.f.a.

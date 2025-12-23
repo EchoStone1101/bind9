@@ -1,3 +1,0 @@
-a.b.c.d.		      500 IN SOA	e.f.g. h.b.g. 3 604800 86400 2419200 604800
-a.b.c.d.		      500 IN NS		i.j.c.i.
-a.b.c.d.		      500 IN TXT	"This_is_a_sample_text"

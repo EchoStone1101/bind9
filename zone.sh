@@ -96,7 +96,7 @@ ns              IN      A       127.0.0.1
     python3 normalize.py /var/cache/bind/dump.txt > info.txt
 
     mkdir -p "${zone}/json/${filename}"
-    mv ctx-norm.json "${zone}/json/${filename}/"
+    mv ctx.json "${zone}/json/${filename}/"
     mv info.txt "${zone}/json/${filename}/"
     
     echo "${file} complete"

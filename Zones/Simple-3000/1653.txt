@@ -1,5 +1,0 @@
-a.a.b.				      500 IN SOA	c.d.e. f.b.e. 3 604800 86400 2419200 604800
-a.a.b.				      500 IN NS		c.d.e.
-*.a.a.b.			      500 IN CNAME	g.h.i.
-j.a.a.b.		      500 IN NS		k.i.l.j.
-j.a.a.b.		      500 IN NS		a.m.
