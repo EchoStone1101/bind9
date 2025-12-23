@@ -1,0 +1,10 @@
+h.d.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+h.d.		500 IN NS	j.
+f.h.d.		500 IN AAAA	7:5:2:7:8:5:8:6
+h.d.		500 IN AAAA	9:7:3:3:4:8:2:1
+f.d.h.d.		500 IN MX	10 g.i.h.d.
+h.d.		500 IN MX	10 e.
+h.d.		500 IN SRV	10 50 7890 h.d.
+i.a.h.d.		500 IN AAAA	4:5:8:8:7:1:7:5
+a.b.h.d.		500 IN NS	h.d.
+h.d.		500 IN A	96.196.148.103

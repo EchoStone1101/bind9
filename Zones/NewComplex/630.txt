@@ -1,0 +1,10 @@
+c.i.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+c.i.		500 IN NS	d.e.
+c.i.		500 IN TXT	"iceberg"
+g.j.c.i.		500 IN CNAME	c.i.
+c.i.		500 IN AAAA	7:7:9:5:3:7:1:1
+c.i.		500 IN SRV	10 50 7890 e.j.c.i.
+c.i.		500 IN AAAA	3:9:3:6:9:7:9:7
+h.c.i.		500 IN SRV	10 50 7890 i.*.c.*.
+e.c.i.		500 IN TXT	"iceberg"
+c.c.i.		500 IN AAAA	2:3:8:9:3:7:5:5

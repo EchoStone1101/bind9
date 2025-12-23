@@ -1,0 +1,10 @@
+d.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+d.		500 IN NS	.
+d.		500 IN A	61.224.96.127
+a.d.		500 IN AAAA	8:6:6:5:3:5:8:8
+i.d.		500 IN AAAA	5:8:3:9:1:5:3:2
+c.d.		500 IN TXT	"This is a sample text."
+d.		500 IN AAAA	4:7:8:2:6:4:2:5
+d.		500 IN AAAA	2:9:8:3:2:4:5:3
+d.		500 IN MX	10 j.
+e.d.		500 IN DNAME	i.d.

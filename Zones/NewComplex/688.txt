@@ -1,0 +1,10 @@
+f.g.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+f.g.		500 IN NS	f.g.
+f.g.		500 IN MX	10 .
+f.g.		500 IN A	73.13.186.220
+*.f.g.		500 IN MX	10 g.c.j.
+j.f.g.		500 IN SRV	10 50 7890 d.a.
+i.f.g.		500 IN CNAME	f.g.
+d.j.f.g.		500 IN DNAME	*.c.f.g.
+a.f.g.		500 IN A	217.34.62.164
+b.g.f.g.		500 IN DNAME	f.g.

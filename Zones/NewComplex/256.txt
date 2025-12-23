@@ -1,0 +1,10 @@
+e.g.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+e.g.		500 IN NS	e.g.
+d.e.g.		500 IN DNAME	c.e.e.g.
+f.f.e.g.		500 IN SRV	10 50 7890 b.i.e.g.
+c.*.e.g.		500 IN AAAA	5:1:9:8:1:7:4:3
+e.g.		500 IN TXT	"iceberg"
+e.g.		500 IN SRV	10 50 7890 e.g.
+f.e.g.		500 IN A	186.228.144.244
+e.g.		500 IN A	159.130.206.114
+g.*.e.g.		500 IN A	7.32.177.21

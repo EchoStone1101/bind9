@@ -1,0 +1,11 @@
+i.f.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+i.f.		500 IN NS	e.f.i.f.
+*.b.i.f.		500 IN MX	10 f.i.f.
+f.a.i.f.		500 IN AAAA	6:1:7:1:5:6:5:4
+g.f.i.f.		500 IN NS	.
+b.i.f.		500 IN TXT	"This is a sample text."
+b.b.i.f.		500 IN NS	i.f.
+*.i.f.		500 IN TXT	"This is a sample text."
+d.g.i.f.		500 IN A	222.120.210.111
+f.i.i.f.		500 IN MX	10 d.i.f.
+e.f.i.f.		500 IN A	49.181.53.29

@@ -99,3 +99,10 @@ doc/man/pkcs11-tokens.8in
 \.dir-locals-2.el
 /emacs.desktop
 /emacs.desktop-lock
+# Nits
+.DS_Store
+.vscode/
+func.json
+object.json
+tmp.txt
+log.txt

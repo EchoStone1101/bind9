@@ -34,9 +34,9 @@ isc__hash_initialize(void) {
 	 * fuzzing find a crash or a hang.
 	 */
 	uint8_t key[16] = { 1 };
-#if !FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
-	isc_entropy_get(key, sizeof(key));
-#endif /* if FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION */
+// #if !FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
+// 	isc_entropy_get(key, sizeof(key));
+// #endif /* if FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION */
 	STATIC_ASSERT(sizeof(key) >= sizeof(isc_hash_key),
 		      "sizeof(key) < sizeof(isc_hash_key)");
 	memmove(isc_hash_key, key, sizeof(isc_hash_key));
@@ -56,7 +56,8 @@ isc_hash_set_initializer(const void *initializer) {
 
 void
 isc_hash32_init(isc_hash32_t *restrict state) {
-	isc_halfsiphash24_init(state, isc_hash_key);
+	// isc_halfsiphash24_init(state, isc_hash_key);
+	memset(state, 0, sizeof(isc_hash32_t));
 }
 
 void
@@ -64,21 +65,23 @@ isc_hash32_hash(isc_hash32_t *restrict state, const void *data,
 		const size_t length, const bool case_sensitive) {
 	REQUIRE(length == 0 || data != NULL);
 
-	isc_halfsiphash24_hash(state, data, length, case_sensitive);
+	// isc_halfsiphash24_hash(state, data, length, case_sensitive);
 }
 
 uint32_t
 isc_hash32_finalize(isc_hash32_t *restrict state) {
 	uint32_t hval;
 
-	isc_halfsiphash24_finalize(state, (uint8_t *)&hval);
+	// isc_halfsiphash24_finalize(state, (uint8_t *)&hval);
+	hval = 0;
 
 	return (hval);
 }
 
 void
 isc_hash64_init(isc_hash64_t *restrict state) {
-	isc_siphash24_init(state, isc_hash_key);
+	// isc_siphash24_init(state, isc_hash_key);
+	memset(state, 0, sizeof(isc_hash64_t));
 }
 
 void
@@ -86,14 +89,15 @@ isc_hash64_hash(isc_hash64_t *restrict state, const void *data,
 		const size_t length, const bool case_sensitive) {
 	REQUIRE(length == 0 || data != NULL);
 
-	isc_siphash24_hash(state, data, length, case_sensitive);
+	// isc_siphash24_hash(state, data, length, case_sensitive);
 }
 
 uint64_t
 isc_hash64_finalize(isc_hash64_t *restrict state) {
 	uint64_t hval;
 
-	isc_siphash24_finalize(state, (uint8_t *)&hval);
+	// isc_siphash24_finalize(state, (uint8_t *)&hval);
+	hval = 0;
 
 	return (hval);
 }

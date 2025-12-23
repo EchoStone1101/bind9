@@ -1,0 +1,11 @@
+f.j.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+f.j.		500 IN NS	h.h.f.j.
+f.j.		500 IN SRV	10 50 7890 e.f.j.
+f.j.		500 IN AAAA	6:7:1:3:9:4:2:1
+e.f.j.		500 IN AAAA	7:8:4:4:3:2:8:6
+f.j.		500 IN SRV	10 50 7890 e.d.i.d.
+f.j.		500 IN A	199.88.215.203
+f.f.j.		500 IN CNAME	i.*.f.j.
+e.e.f.j.		500 IN A	93.61.59.209
+f.j.		500 IN A	219.43.30.188
+h.h.f.j.		500 IN A	56.251.159.211

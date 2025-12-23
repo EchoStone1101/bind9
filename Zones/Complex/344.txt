@@ -1,0 +1,11 @@
+g.b.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+g.b.		500 IN NS	h.g.b.
+c.j.g.b.		500 IN NS	g.b.
+*.g.b.		500 IN AAAA	6:3:2:5:7:1:1:1
+*.g.b.		500 IN SRV	10 50 7890 f.g.b.
+g.b.		500 IN MX	10 g.f.g.b.
+a.g.b.		500 IN TXT	"This is a sample text."
+c.*.g.b.		500 IN A	236.54.250.112
+i.g.b.		500 IN DNAME	g.b.
+h.g.b.		500 IN NS	g.b.
+h.g.b.		500 IN A	177.1.72.224

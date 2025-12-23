@@ -1,0 +1,11 @@
+g.i.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+g.i.		500 IN NS	b.g.i.
+g.i.		500 IN A	173.63.226.178
+g.g.i.		500 IN A	240.234.68.51
+b.e.g.i.		500 IN NS	g.i.
+g.i.		500 IN TXT	"This is a sample text."
+*.*.g.i.		500 IN A	87.122.18.2
+g.i.		500 IN NS	g.i.
+g.i.		500 IN A	207.149.34.201
+g.i.		500 IN SRV	10 50 7890 i.g.i.
+b.g.i.		500 IN A	172.65.62.192

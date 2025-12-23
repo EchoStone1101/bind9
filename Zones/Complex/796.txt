@@ -1,0 +1,13 @@
+h.i.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+h.i.		500 IN NS	h.h.i.
+h.i.		500 IN NS	h.i.
+a.h.i.		500 IN SRV	10 50 7890 a.*.h.i.
+b.h.i.		500 IN TXT	"This is a sample text."
+b.e.h.i.		500 IN AAAA	7:5:3:1:5:8:6:5
+h.i.		500 IN NS	d.c.h.i.
+g.h.i.		500 IN DNAME	g.h.i.
+h.i.		500 IN NS	c.h.h.i.
+h.i.		500 IN AAAA	3:4:3:7:8:6:6:8
+h.h.i.		500 IN A	79.242.153.145
+d.c.h.i.		500 IN A	109.201.206.31
+c.h.h.i.		500 IN A	108.213.46.25

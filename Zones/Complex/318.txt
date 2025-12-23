@@ -1,0 +1,10 @@
+h.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+h.		500 IN NS	h.
+h.		500 IN SRV	10 50 7890 g.h.
+h.		500 IN AAAA	4:8:7:7:9:4:1:5
+j.h.		500 IN NS	f.h.
+h.		500 IN A	18.249.49.65
+e.h.		500 IN SRV	10 50 7890 h.
+h.		500 IN TXT	"This is a sample text."
+d.h.		500 IN A	167.0.199.65
+h.		500 IN MX	10 h.

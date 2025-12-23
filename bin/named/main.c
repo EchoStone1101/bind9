@@ -1051,6 +1051,7 @@ create_managers(void) {
 	return (ISC_R_SUCCESS);
 }
 
+
 static void
 setup(void) {
 	isc_result_t result;

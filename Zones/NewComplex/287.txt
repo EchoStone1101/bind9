@@ -1,0 +1,11 @@
+f.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+f.		500 IN NS	a.f.
+f.		500 IN A	248.248.93.7
+d.f.		500 IN TXT	"iceberg"
+e.f.		500 IN A	116.204.205.212
+j.f.		500 IN AAAA	1:2:1:6:4:2:3:8
+j.f.		500 IN A	137.122.128.128
+j.f.		500 IN A	188.168.121.245
+b.f.		500 IN MX	10 f.
+f.		500 IN MX	10 h.f.
+a.f.		500 IN A	39.106.53.13

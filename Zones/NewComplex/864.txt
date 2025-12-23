@@ -1,0 +1,10 @@
+h.a.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+h.a.		500 IN NS	h.a.
+b.a.h.a.		500 IN A	66.176.139.147
+c.b.h.a.		500 IN CNAME	e.d.h.a.
+i.d.h.a.		500 IN TXT	"iceberg"
+h.a.		500 IN TXT	"iceberg"
+h.a.		500 IN A	170.243.141.140
+*.c.h.a.		500 IN MX	10 h.a.
+*.*.h.a.		500 IN TXT	"iceberg"
+h.a.		500 IN A	72.165.181.76

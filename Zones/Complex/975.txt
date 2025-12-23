@@ -1,0 +1,10 @@
+a.*.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+a.*.		500 IN NS	a.*.
+a.*.		500 IN A	149.174.213.241
+j.i.a.*.		500 IN AAAA	3:3:8:2:8:1:2:4
+a.*.		500 IN AAAA	9:8:5:3:4:8:2:4
+e.a.*.		500 IN DNAME	a.*.
+a.*.		500 IN SRV	10 50 7890 c.h.g.*.
+d.a.*.		500 IN CNAME	*.a.*.
+*.a.*.		500 IN A	59.209.90.21
+a.a.*.		500 IN CNAME	a.*.

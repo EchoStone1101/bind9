@@ -1,0 +1,11 @@
+h.g.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+h.g.		500 IN NS	e.c.h.g.
+c.h.h.g.		500 IN DNAME	d.e.h.g.
+f.f.h.g.		500 IN A	84.231.113.184
+h.g.		500 IN SRV	10 50 7890 g.*.h.g.
+h.g.		500 IN AAAA	1:7:5:5:6:4:5:4
+d.h.h.g.		500 IN DNAME	h.g.
+h.j.h.g.		500 IN AAAA	3:3:9:3:1:8:8:7
+j.f.h.g.		500 IN AAAA	4:3:2:9:8:7:7:6
+h.g.		500 IN A	17.229.78.188
+e.c.h.g.		500 IN A	27.212.107.135

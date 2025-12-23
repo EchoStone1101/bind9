@@ -1,0 +1,10 @@
+f.*.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+f.*.		500 IN NS	b.f.*.
+f.f.*.		500 IN DNAME	j.f.*.
+f.*.		500 IN A	169.210.241.25
+b.d.f.*.		500 IN AAAA	6:6:4:1:5:3:7:4
+f.*.		500 IN NS	i.b.
+j.f.*.		500 IN A	145.226.239.161
+b.f.*.		500 IN AAAA	8:6:8:2:9:4:4:8
+e.g.f.*.		500 IN AAAA	2:8:8:8:9:9:4:2
+a.f.*.		500 IN TXT	"This is a sample text."

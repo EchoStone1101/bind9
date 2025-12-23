@@ -1,0 +1,11 @@
+h.e.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+h.e.		500 IN NS	d.h.h.e.
+g.e.h.e.		500 IN DNAME	j.d.h.e.
+a.*.h.e.		500 IN MX	10 h.f.h.e.
+e.h.e.		500 IN SRV	10 50 7890 e.c.
+c.h.e.		500 IN NS	h.e.
+h.e.		500 IN NS	h.
+h.h.e.		500 IN TXT	"iceberg"
+h.f.h.e.		500 IN DNAME	j.*.h.e.
+g.h.e.		500 IN TXT	"iceberg"
+d.h.h.e.		500 IN A	36.0.28.171

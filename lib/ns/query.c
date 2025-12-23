@@ -18,6 +18,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
+#include <stdio.h>
 
 #include <isc/async.h>
 #include <isc/hex.h>
@@ -74,6 +75,7 @@
 #include <ns/xfrout.h>
 
 #include "probes.h"
+#include "dump.h"
 
 #if 0
 /*
@@ -11884,8 +11886,40 @@ log_queryerror(ns_client_t *client, isc_result_t result, int line, int level) {
 		      sep2, typep, __FILE__, line);
 }
 
+static isc_result_t
+zone_dump(dns_zone_t *zone, void *uap) {
+	dump_struct_dns_zone(zone, 1);
+	printf("%p\n", *(void**)(((void *)zone) + 384));
+	return ISC_R_SUCCESS;
+}
+
 void
 ns_query_start(ns_client_t *client, isc_nmhandle_t *handle) {
+
+	// f = stdout;
+	f = fopen("dump.txt", "w");
+	assert(f != NULL);
+
+	// Prepare more free rdatalist and rdata
+	dns_rdatalist_t *rdatalist[10] = {0};
+	dns_rdata_t *rdata[10] = {0};
+	for (int i=0;i<10;i++) {
+		dns_message_gettemprdatalist(client->message, &rdatalist[i]);
+		dns_message_gettemprdata(client->message, &rdata[i]);
+		
+	}
+	for (int i=0;i<10;i++) {
+		dns_message_puttemprdatalist(client->message, &rdatalist[i]);
+		dns_message_puttemprdata(client->message, &rdata[i]);
+	}
+
+	dump_struct_ns_client_6057(client, 1);
+	
+	dns_zt_t *zt = rcu_dereference(client->view->zonetable);
+	dns_zt_apply(zt, false, NULL, &zone_dump, NULL);
+	fclose(f);
+	printf("[dump] done\n");
+
 	isc_result_t result;
 	dns_message_t *message;
 	dns_rdataset_t *rdataset;

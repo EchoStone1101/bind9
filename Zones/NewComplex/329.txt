@@ -1,0 +1,10 @@
+e.i.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+e.i.		500 IN NS	e.i.
+e.e.i.		500 IN A	144.107.117.39
+c.e.i.		500 IN A	88.171.232.0
+a.b.e.i.		500 IN A	107.36.5.122
+e.i.		500 IN MX	10 .
+c.j.e.i.		500 IN AAAA	3:6:9:6:7:3:3:7
+e.i.		500 IN A	108.59.194.94
+e.i.		500 IN AAAA	9:2:5:8:7:8:7:5
+j.h.e.i.		500 IN SRV	10 50 7890 f.

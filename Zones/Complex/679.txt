@@ -1,0 +1,10 @@
+f.b.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+f.b.		500 IN NS	d.i.
+i.f.b.		500 IN DNAME	a.f.b.
+f.b.		500 IN A	179.170.172.220
+g.a.f.b.		500 IN A	149.23.82.90
+g.f.b.		500 IN DNAME	a.*.f.b.
+f.b.		500 IN SRV	10 50 7890 i.f.b.
+f.b.		500 IN TXT	"This is a sample text."
+a.c.f.b.		500 IN A	30.202.144.92
+e.*.f.b.		500 IN NS	h.f.b.

@@ -1,0 +1,11 @@
+d.b.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+d.b.		500 IN NS	h.c.d.b.
+h.e.d.b.		500 IN MX	10 g.h.f.
+f.d.b.		500 IN MX	10 i.h.d.b.
+f.d.b.		500 IN A	176.109.39.30
+e.h.d.b.		500 IN CNAME	h.d.b.
+c.f.d.b.		500 IN SRV	10 50 7890 a.*.d.b.
+d.d.b.		500 IN AAAA	2:5:7:5:8:5:3:3
+i.d.b.		500 IN AAAA	6:4:3:3:4:9:9:8
+c.d.b.		500 IN AAAA	2:6:6:8:8:1:5:5
+h.c.d.b.		500 IN A	184.185.88.172

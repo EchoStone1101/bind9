@@ -1,0 +1,10 @@
+d.i.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+d.i.		500 IN NS	d.i.
+c.i.d.i.		500 IN A	248.162.49.20
+d.i.		500 IN A	229.124.237.143
+d.i.		500 IN TXT	"This is a sample text."
+j.c.d.i.		500 IN A	19.50.252.85
+*.d.i.		500 IN AAAA	1:2:6:6:9:8:3:1
+f.e.d.i.		500 IN SRV	10 50 7890 b.a.*.
+d.i.		500 IN SRV	10 50 7890 g.d.d.i.
+*.h.d.i.		500 IN SRV	10 50 7890 i.d.i.

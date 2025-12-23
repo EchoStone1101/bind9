@@ -1,0 +1,10 @@
+a.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+a.		500 IN NS	.
+a.		500 IN AAAA	7:8:3:3:2:5:7:2
+g.a.		500 IN AAAA	2:5:5:6:8:3:7:5
+a.		500 IN A	164.100.247.108
+a.		500 IN MX	10 d.a.
+e.a.		500 IN MX	10 f.a.
+a.		500 IN MX	10 a.
+a.a.		500 IN A	79.229.80.188
+a.		500 IN MX	10 a.a.

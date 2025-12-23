@@ -1,0 +1,10 @@
+j.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+j.		500 IN NS	j.j.
+j.		500 IN AAAA	9:3:8:1:5:8:9:9
+j.		500 IN TXT	"This is a sample text."
+j.j.		500 IN AAAA	9:7:9:2:1:3:5:1
+j.		500 IN A	160.48.35.67
+*.j.		500 IN AAAA	9:2:5:3:9:8:7:1
+e.j.		500 IN MX	10 b.j.
+j.		500 IN SRV	10 50 7890 j.
+j.		500 IN MX	10 j.

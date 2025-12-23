@@ -1,0 +1,10 @@
+b.d.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+b.d.		500 IN NS	a.c.c.j.
+*.*.b.d.		500 IN AAAA	3:1:5:2:8:3:8:1
+b.d.		500 IN SRV	10 50 7890 d.b.d.
+b.d.		500 IN TXT	"This is a sample text."
+d.c.b.d.		500 IN TXT	"This is a sample text."
+b.d.		500 IN SRV	10 50 7890 g.b.d.
+b.d.b.d.		500 IN AAAA	4:4:4:2:6:9:4:8
+g.h.b.d.		500 IN CNAME	g.b.d.
+b.d.		500 IN SRV	10 50 7890 .

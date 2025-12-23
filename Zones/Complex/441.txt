@@ -1,0 +1,10 @@
+g.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+g.		500 IN NS	g.
+d.g.		500 IN TXT	"This is a sample text."
+f.g.		500 IN MX	10 h.g.
+h.g.		500 IN AAAA	6:8:5:9:3:6:8:9
+g.		500 IN SRV	10 50 7890 g.
+h.g.		500 IN NS	e.a.
+g.		500 IN AAAA	2:9:7:1:7:3:9:8
+e.g.		500 IN AAAA	9:1:4:1:8:6:2:7
+g.		500 IN AAAA	5:9:3:7:5:2:1:8

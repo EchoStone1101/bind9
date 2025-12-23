@@ -1,0 +1,11 @@
+e.b.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+e.b.		500 IN NS	g.i.e.b.
+b.h.e.b.		500 IN NS	b.e.b.
+f.e.b.		500 IN NS	e.b.
+h.e.b.		500 IN CNAME	c.*.e.b.
+e.b.		500 IN A	61.125.230.59
+e.*.e.b.		500 IN NS	h.e.b.
+h.a.e.b.		500 IN TXT	"This is a sample text."
+e.b.		500 IN A	246.98.119.10
+j.e.b.		500 IN NS	d.e.b.
+g.i.e.b.		500 IN A	225.186.106.186

@@ -1,0 +1,11 @@
+g.*.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+g.*.		500 IN NS	a.a.g.*.
+i.g.*.		500 IN TXT	"iceberg"
+a.a.g.*.		500 IN DNAME	f.g.*.
+f.g.*.		500 IN AAAA	7:1:6:5:5:2:9:1
+g.*.		500 IN MX	10 g.*.
+g.*.		500 IN AAAA	8:1:8:6:7:7:2:9
+a.g.*.		500 IN SRV	10 50 7890 j.i.i.
+j.i.g.*.		500 IN SRV	10 50 7890 g.*.
+g.j.g.*.		500 IN AAAA	5:9:8:4:5:5:8:2
+a.a.g.*.		500 IN A	227.187.91.61

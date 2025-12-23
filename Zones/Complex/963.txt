@@ -1,0 +1,11 @@
+d.c.		500 IN SOA	mname.com. rname.com. 3 604800 86400 2419200 604800
+d.c.		500 IN NS	j.c.
+e.e.d.c.		500 IN TXT	"This is a sample text."
+*.d.c.		500 IN SRV	10 50 7890 c.c.
+d.*.d.c.		500 IN A	76.248.202.181
+a.d.c.		500 IN MX	10 d.c.
+d.c.		500 IN NS	d.c.
+c.i.d.c.		500 IN A	197.6.152.150
+j.f.d.c.		500 IN MX	10 e.
+i.f.d.c.		500 IN AAAA	3:7:8:9:4:9:2:7
+d.c.		500 IN A	104.43.37.210
